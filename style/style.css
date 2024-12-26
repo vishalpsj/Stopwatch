@@ -124,3 +124,20 @@ button{
 .lapList{
     font-family: 'Courier New', Courier, monospace;
 }
+
+.start{
+    background-color: #00aa00b8;
+    color: #000;
+}
+.stop{
+    background-color: rgb(178, 16, 16);
+    color: #fff;
+}
+.lap{
+    background-color: rgb(10, 52, 124);
+    color: #fff;
+}
+.clearLap{
+    background-color: rgb(178, 178, 16);
+    color: #000;
+}
