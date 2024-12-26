@@ -25,15 +25,15 @@ const pausetime = () => {
 // Start button
 start.addEventListener('click', () => {
     if (start.innerText === 'Start') {
-        start.innerText = 'Pause';
+        start.innerHTML= '<p>Pause</p><i class="ri-pause-circle-fill"></i>';
         startTimer();
     }
     else if (start.innerText === 'Pause') {
-        start.innerText = 'Resume';
+        start.innerHTML= '<p>Resume</p><i class="ri-play-circle-fill"></i>';
         pausetime();
     }
     else if (start.innerText === 'Resume') {
-        start.innerText = 'Pause';
+        start.innerHTML= '<p>Pause</p><i class="ri-pause-circle-fill"></i>';
         startTimer();
     }
 })
@@ -42,7 +42,7 @@ start.addEventListener('click', () => {
 
 stop.addEventListener('click', () => {
     clearInterval(intervalId);
-    start.innerText = 'Start';
+    start.innerHTML= `<p>Start</p><i class="ri-play-circle-fill"></i>`;
     time = 0;
     screen.innerText = time;
 });
@@ -53,7 +53,7 @@ lap.addEventListener('click', () => {
     if (screen.innerText !== '0') {
         let lapTime = time;
         let lapScreen = document.createElement('p');
-        lapScreen.innerText = `-> The lap time is ${lapTime}s.`;
+        lapScreen.innerText = `-> Lap created at ${lapTime}s`;
         lapList.appendChild(lapScreen);
     }
 });
