@@ -1,0 +1,53 @@
+/* mobile first approach  */
+/* base screen size is 320px  */
+
+@media screen and (min-width: 320px){
+    html{
+        font-size: 62.5%;
+    }
+    .screen{
+        font-size: 4rem;
+    }
+}
+
+/* screen size is 768px  */
+@media screen and (min-width: 768px){
+    html{
+        font-size: 62.5%;
+    }
+    .screen{
+        font-size: 6rem;
+    }
+    .controls{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .btns{
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+/* screen size is 1024px  */
+@media screen and (min-width: 1024px){
+    html{
+        font-size: 80%
+    }
+    .screen{
+        font-size: 6rem
+    }
+    .controls{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .btns{
+        display: flex;
+        gap: 1rem;
+    }
+}
